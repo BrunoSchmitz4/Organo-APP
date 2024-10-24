@@ -1,0 +1,23 @@
+<section class="cabecalho">
+    <h2>
+      <button routerLink="/lista-livros">
+        Voltar para Minhas leituras
+      </button>
+      <span class="linha-colorida"></span>
+    </h2>
+  </section>
+  <section class="formulario">
+    <form [formGroup]="formulario" (ngSubmit)="adicionarGenero()">
+      <h3>Preencha os dados para adicionar um novo gênero</h3>
+      <div class="formulario__input">
+          <label for="titulo">Nome do Gênero: </label>
+            <input
+              type="text"
+              placeholder="Digite o nome do gênero: "
+              id="titulo"
+              formControlName="titulo">
+        </div>
+        <button class="btn-submit" type="submit">Adicionar gênero</button>
+    </form>
+  </section>
+
