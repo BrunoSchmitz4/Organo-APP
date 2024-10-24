@@ -1,4 +1,13 @@
 <section [ngClass]="livro.genero">
+  <div class="btn-livros">
+    <button class="exclui-livro-btn">
+      Excluir
+    </button>
+    <button class="edita-livro-btn">
+      Editar
+    </button>
+  </div>
+
   <div class="imagem">
     <img [src]="livro.imagem" [alt]="livro.titulo">
   </div>
