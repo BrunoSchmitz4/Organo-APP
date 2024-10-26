@@ -13,6 +13,7 @@ export class ErroGeneroLiterario extends Error {
 }
 
 export class ErroGeneroLiterarioId extends Error {
+
   constructor(mensagem: string) {
     super(mensagem);
     this.name = "ErroGeneroLiterarioId"
@@ -22,6 +23,8 @@ export class ErroGeneroLiterarioId extends Error {
   providedIn: 'root'
 })
 export class LivroService {
+  listaLivro: Livro[] = [];
+  listaTeste: number[] = [1, 2, 3, 4, 5]
 
   public generos: GeneroLiterario[] = [
     {
@@ -94,5 +97,20 @@ export class LivroService {
 
   obterLivrosPorGenero(genero: string): Livro[] {
     return this.livrosPorGenero.get(genero) || [];
+  }
+
+  removerLivroPorTitulo(titulo: string, genero: GeneroLiterario) {
+    this.listaLivro = this.obterLivrosPorGenero(genero.value)
+    this.listaLivro.forEach(livro => {
+      if(livro.titulo == titulo) this.listaLivro.pop()
+    })
+    // this.listaLivro.forEach(livro => {
+    //   if(livro.titulo == titulo) {
+    //     this.listaLivro.filter(livro => livro.titulo == titulo)
+    //     console.log(livro)
+    //   }
+    // });
+    this.listaTeste.pop()
+    console.log(this.listaTeste)
   }
 }
