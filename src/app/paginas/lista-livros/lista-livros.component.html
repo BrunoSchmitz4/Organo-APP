@@ -1,16 +1,31 @@
 <section class="cabecalho">
+  <hr class="section-division">
   <!-- <app-user-info></app-user-info> -->
-  <h2 class="animate__animated animate__fadeInUp">Minhas leituras
-    <span class="linha-colorida"></span>
-  </h2>
-  <button routerLink="/formulario">
-    <i class="material-icons">add</i>
-    Adicionar Livro
-  </button>
-  <button routerLink="/formulario-genero">
-    <i class="material-icons">add</i>
-    Adicionar Gênero
-  </button>
+   <section class="livro-content-section">
+    <h2 class="animate__animated animate__fadeInUp">Minhas leituras
+      <span class="linha-colorida"></span>
+    </h2>
+    <ul class="livro-list">
+      <a class="livro-anchor" href="">
+        <li class="livro-item">
+          <span class="livro-escritor">Pokémon Black white Vol,1</span>
+          <span class="livro-nome">Bruno Schmitz da Silva</span>
+          <span class="livro-genero">Gênero do livro</span>
+        </li>
+      </a>
+    </ul>
+   </section>
+   <hr class="section-division">
+   <section class="livro-btn-section">
+    <button routerLink="/formulario">
+      <i class="material-icons">add</i>
+      Adicionar Livro
+    </button>
+    <button routerLink="/formulario-genero">
+      <i class="material-icons">add</i>
+      Adicionar Gênero
+    </button>
+   </section>
 </section>
 @for (genero of generos; track genero) {
   <section class="generos" [ngClass]="genero.id">

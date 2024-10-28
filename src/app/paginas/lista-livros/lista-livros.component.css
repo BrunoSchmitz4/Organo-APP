@@ -108,4 +108,72 @@ h3 {
   margin: 0 auto;
 }
 
+.btn-list-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
 
+  background-color: white;
+}
+
+.livro-btn-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.livro-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.livro-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.livro-anchor {
+  text-decoration: none;
+}
+
+.livro-item {
+  min-width: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  width: 100%;
+
+  background-color: white;
+  border: 1px solid #6278F7;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.livro-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  min-width: 200px;
+  width: 100%;
+}
