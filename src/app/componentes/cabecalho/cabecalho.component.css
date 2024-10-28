@@ -5,11 +5,11 @@
 
  .banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   align-content: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 90%;
   height: 15vh;
   margin: auto;
@@ -19,6 +19,40 @@
   border-bottom-right-radius: 8px;
   box-shadow: 0px 2px 10px#6278F7;
   background-color: white;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+  margin-top: 4px;
+}
+
+.scroll-watcher {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 10px;
+  /* position: fixed; */
+  top: 0;
+  left:0;
+  z-index: 1000;
+  background-color: #6278F7;
+  width: 100%;
+  scale: 0 1;
+  transform-origin: left;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll(y);
+
+}
+
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+  }
 }
 
 .header-container {
