@@ -1,8 +1,9 @@
 <section class="cabecalho">
   <hr class="section-division">
   <!-- <app-user-info></app-user-info> -->
-   <section class="livro-content-section">
-    <h2 class="animate__animated animate__fadeInUp">Minhas leituras
+  <section class="livro-content-section">
+    <h2 class="animate__animated animate__fadeInUp">
+      Minhas leituras
       <span class="linha-colorida"></span>
     </h2>
     <ul class="livro-list">
@@ -28,7 +29,7 @@
    </section>
 </section>
 @for (genero of generos; track genero) {
-  <section class="generos" [ngClass]="genero.id">
+  <section class="generos" [ngClass]="genero.id" #generosElement>
     <h3>{{ genero.value }}<span class="linha-colorida" [ngClass]="genero.id"></span></h3>
     <div class="livros-genero">
       @for (livro of livroService.obterLivrosPorGenero(genero.id); track livro) {
@@ -38,4 +39,6 @@
       }
       </div>
   </section>
+<script src="lista-livros.component.js"></script>
+
 }
