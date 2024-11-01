@@ -64,3 +64,7 @@ Caso queira ter acesso ao projeto, peço que faça um forch do repositório.
 # Pessoas Desenvolvedoras do Projeto
 
 <img loading="lazy" src="https://avatars.githubusercontent.com/u/85579710?v=4" width=115><br><sub><a href="https://github.com/BrunoSchmitz4">Bruno Schmitz da Silva</sub>
+<img loading="lazy" src="https://avatars.githubusercontent.com/u/85579710?v=4" width=115><br><sub><a href="https://github.com/hanattan11">Hanattan Igor Grah</sub>
+<img loading="lazy" src="https://avatars.githubusercontent.com/u/85579710?v=4" width=115><br><sub><a>Tiffani Candido</sub>
+
+
