@@ -61,10 +61,15 @@
   justify-content: center;
   width: auto;
   min-width: min-content;
+  width: 50%;
 }
 
-#logo-div {
-  width: 40%;
+.header-container-img {
+  width: 10%;
+}
+
+.header-container-box {
+  width: 60%;
 }
 
 #nav-div {

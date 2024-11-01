@@ -1,25 +1,31 @@
 <section [ngClass]="livro.genero">
-  <div class="btn-livros">
-    <button class="exclui-livro-btn" (click)="delLivro()">
-      Excluir
-    </button>
-    <button class="edita-livro-btn">
-      Editar
-    </button>
-  </div>
-
   <div class="imagem">
     <img [src]="livro.imagem" [alt]="livro.titulo">
   </div>
   <div class="info-livro">
+    <h5>
+      <app-avaliacao-estrelas
+        [classificacao]="livro.classificacao">
+      </app-avaliacao-estrelas>
+    </h5>
     <h3>{{ livro.titulo }}</h3>
-    <h4>{{ livro.autoria }}</h4>
-  <h5>
-    <app-avaliacao-estrelas
-      [classificacao]="livro.classificacao">
-    </app-avaliacao-estrelas>
-    <span>{{this.miau}}</span>
-  </h5>
-    <h6>Lido em {{ livro.dataLeitura | date: 'dd/MM/yyyy'}}</h6>
+    <h4><u><i>{{ livro.autoria }}</i></u></h4>
+    <div class="container-livro-lido">
+      <div class="">
+        <h6 id="livro-lido-text">Lido em {{ livro.dataLeitura | date: 'dd/MM/yyyy'}}</h6>
+      </div>
+    </div>
+  </div>
+  <div class="btn-livros-container">
+    <div class="btn-livro-box">
+      <button class="exclui-livro-btn livro-btn" (click)="delLivro()">
+        Excluir
+      </button>
+    </div>
+    <div class="btn-livro-box">
+      <button class="edita-livro-btn livro-btn">
+        Editar
+      </button>
+    </div>
   </div>
 </section>
